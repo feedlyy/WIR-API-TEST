@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->enum('saldo', ['merchant', 'costumer']);
+            $table->enum('role', ['merchant', 'costumer']);
             $table->integer('balance')->nullable();
             $table->integer('point')->nullable();
             $table->rememberToken();
