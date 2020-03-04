@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTableRewards extends Migration
+class CreateRewardsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -27,6 +27,6 @@ class CreateTableRewards extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table_rewards');
+        Schema::dropIfExists('rewards');
     }
 }
