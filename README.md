@@ -76,3 +76,13 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## How to install
+
+1. Clone this repository with git command on your working directory (C:\xampp\htdocs on xampp or C:\laragon\www on laragon): git clone https://github.com/feedlyy/WIR-API-TEST.git
+2. Edit the .env.example file. Change the DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME and DB_PASSWORD parameter as your database configuration.
+3. Save the file as .env
+4. Install the dependencies: composer install --no-scripts
+5. Generate a random key with artisan command php artisan key:generate
+6. Migrate the tables to database with artisan command php artisan migrate
+7. install laravel passport for api authentication, with artisan command php artisan passport:install
