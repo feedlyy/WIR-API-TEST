@@ -84,5 +84,5 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 3. Save the file as .env
 4. Install the dependencies: composer install --no-scripts
 5. Generate a random key with artisan command php artisan key:generate
-6. Migrate the tables to database with artisan command php artisan migrate
+6. Migrate the tables to database and data(seeder) with artisan command php artisan migrate:fresh --seed
 7. install laravel passport for api authentication, with artisan command php artisan passport:install
