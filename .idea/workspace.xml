@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="844271e0-8ada-477d-b5e2-31f0903b425c" name="Default Changelist" comment="" />
+    <list default="true" id="844271e0-8ada-477d-b5e2-31f0903b425c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/WIR-API-TEST.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WIR-API-TEST.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -109,9 +121,11 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
       <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
       <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/laravel/airlock" />
     </include_path>
   </component>
   <component name="ProjectId" id="1YfLX9joGFvC5ZLauz2BNKmDfWT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -119,6 +133,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../mini_e-wallet" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -151,17 +166,81 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583328738307</updated>
-      <workItem from="1583328739888" duration="1409000" />
+      <workItem from="1583328739888" duration="5452000" />
+      <workItem from="1583366136564" duration="22756000" />
     </task>
+    <task id="LOCAL-00001" summary="update readme.md">
+      <created>1583330420299</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583330420299</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update readme.md">
+      <created>1583332093338</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583332093338</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update reward migration">
+      <created>1583332147631</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583332147631</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update crud products">
+      <created>1583388001864</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1583388001864</updated>
+    </task>
+    <task id="LOCAL-00005" summary="created seeder for users and products">
+      <created>1583394747845</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583394747845</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update README.md">
+      <created>1583394915789</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1583394915789</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update readme.md" />
+    <MESSAGE value="update reward migration" />
+    <MESSAGE value="update crud products" />
+    <MESSAGE value="created seeder for users and products" />
+    <MESSAGE value="update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="150" y="96" key="FileChooserDialogImpl" timestamp="1583329397281">
+    <state x="371" y="97" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1583399585152">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="150" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1583329397281" />
+    <state x="371" y="97" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1583399585152" />
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1583394914928">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1583394914928" />
+    <state x="150" y="96" key="FileChooserDialogImpl" timestamp="1583366185445">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="150" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1583366185445" />
+    <state x="233" y="75" key="Vcs.Push.Dialog.v2" timestamp="1583394918344">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1583394918344" />
   </component>
 </project>

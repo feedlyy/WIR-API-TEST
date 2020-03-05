@@ -14,9 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
+Route::middleware('auth:airlock')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+
+
+
+//login user
+Route::post('/login', 'API\UserController@login');
 
 //post product
 Route::post('/products/create', 'API\ProductsController@store');
@@ -26,3 +33,10 @@ Route::delete('/products/{id}', 'API\ProductsController@destroy');
 Route::put('/products/{id}', 'API\ProductsController@update');
 //get all product
 Route::get('/products', 'API\ProductsController@index');
+
+Route::group(['middleware' => 'auth:airlock'], function(){
+    //logout user
+    Route::delete('/logout', 'API\UserController@logout');
+});
+
+
