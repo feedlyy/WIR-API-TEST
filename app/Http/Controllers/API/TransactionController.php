@@ -9,6 +9,7 @@ use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
 
 class TransactionController extends Controller
 {
@@ -19,6 +20,15 @@ class TransactionController extends Controller
 //        find item
         $products = Product::find($item);
         $request = $request->all();
+
+        $validate = Validator::make($request, [
+           'total' => 'required|integer'
+        ]);
+
+        //validate input
+        if ($validate->fails()) {
+            return response()->json($validate->messages()->first(), 401);
+        }
 
 //        check if item its not found
         if ($products === null) {
