@@ -22,5 +22,10 @@ class ProductsTableSeeder extends Seeder
             'stock' => 10,
             'price' => 25000
         ]);
+        DB::table('products')->insert([
+            'name' => 'shampo',
+            'stock' => 20,
+            'price' => 10000
+        ]);
     }
 }
