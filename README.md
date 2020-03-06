@@ -86,3 +86,23 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 5. Generate a random key with artisan command php artisan key:generate
 6. Migrate the tables to database and data(seeder) with artisan command php artisan migrate:fresh --seed
 7. install laravel passport for api authentication, with artisan command php artisan passport:install
+
+## Information
+##### 1. The rule for a reward each transaction
+```ruby
+Reward A (20 Point), For minimum purchase Rp. 20.000
+Reward B (40 Point), For minimum purchase Rp. 40.000
+Basic Reward (5 Point), For purchase below Rp. 20.000
+```
+
+##### 2. List of API url :
+```ruby
+../routes.api.php
+```
+
+##### 3. Usage of transaction url
+```ruby
+item id
+1 form data how much you will buy the product, example: total: 3
+```
+
