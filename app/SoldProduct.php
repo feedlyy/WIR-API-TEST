@@ -11,6 +11,6 @@ class SoldProduct extends Model
     protected $primaryKey = 'id';
 
     protected $fillable = [
-      'quantity'
+      'quantity', 'id_product', 'id_user'
     ];
 }
