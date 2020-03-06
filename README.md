@@ -102,7 +102,7 @@ Basic Reward (5 Point), For purchase below Rp. 20.000
 
 ##### 3. Usage of transaction url
 ```ruby
-item id
-1 form data how much you will buy the product, example: total: 3
+Pass the items ID, and total item you want to buy. Example :
+localhost:8000/api/buy/3, total = 3 (x-www-form-urlencoded)
 ```
 
