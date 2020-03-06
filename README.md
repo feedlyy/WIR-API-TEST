@@ -87,6 +87,11 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 6. Migrate the tables to database and data(seeder) with artisan command php artisan migrate:fresh --seed
 7. install laravel passport for api authentication, with artisan command php artisan passport:install
 
+## Database Schema
+Database Schema for this test.
+
+![](https://user-images.githubusercontent.com/33906363/76050878-8c802780-5f9b-11ea-8b38-431d2913b35f.png)
+
 ## Information
 ##### 1. The rule for a reward each transaction
 ```ruby
