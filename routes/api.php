@@ -18,25 +18,29 @@ Route::middleware('auth:airlock')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
-
-
-
 //login user
 Route::post('/login', 'API\UserController@login');
-
-//post product
-Route::post('/products/create', 'API\ProductsController@store');
-//delete product
-Route::delete('/products/{id}', 'API\ProductsController@destroy');
-//update product
-Route::put('/products/{id}', 'API\ProductsController@update');
-//get all product
-Route::get('/products', 'API\ProductsController@index');
 
 Route::group(['middleware' => 'auth:airlock'], function(){
     //logout user
     Route::delete('/logout', 'API\UserController@logout');
+
+    //get all product
+    Route::get('/products', 'API\ProductsController@index');
+    //post product
+    Route::post('/products/create', 'API\ProductsController@store');
+    //delete product
+    Route::delete('/products/{id}', 'API\ProductsController@destroy');
+    //update product
+    Route::put('/products/{id}', 'API\ProductsController@update');
+
+    //buy a product by costumer
+    Route::put('/buy/{item}', 'API\TransactionController@buy');
+
+    //transaction record for merchant
+    Route::get('/records', 'API\TransactionController@TransactionRecord');
 });
+
+
 
 
