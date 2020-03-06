@@ -102,7 +102,7 @@ Basic Reward (5 Point), For purchase below Rp. 20.000
 
 ##### 2. List of API url :
 ```ruby
-../routes.api.php
+../routes/api.php
 ```
 
 ##### 3. Usage of transaction url
