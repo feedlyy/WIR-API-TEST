@@ -4,9 +4,8 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use App\Product;
-use Dotenv\Validator;
+use App\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class ProductsController extends Controller
 {
@@ -18,6 +17,8 @@ class ProductsController extends Controller
     public function index()
     {
         //
+        $this->authorize('All', User::class);
+
         $products = Product::all();
         if ($products === null) {
             return response()->json(['Result' => 'Data is empty'], 200);
@@ -40,6 +41,8 @@ class ProductsController extends Controller
     public function store(Request $request)
     {
         //
+        $this->authorize('Merchant', User::class);
+
         $request = $request->all();
         $products = new Product;
         $validate = \Illuminate\Support\Facades\Validator::make($request, $products->rules);
@@ -72,6 +75,8 @@ class ProductsController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $this->authorize('Merchant', User::class);
+
         $products = Product::query()->find($id);
         $request = $request->all();
 //        check if id exist
@@ -91,6 +96,8 @@ class ProductsController extends Controller
     public function destroy($id)
     {
         //
+        $this->authorize('Merchant', User::class);
+
 //        get data before deleted to show what item that deleted
         $data = [];
         array_push($data, Product::find($id));
